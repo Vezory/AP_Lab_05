@@ -1,14 +1,9 @@
-// UnitTest_05_1.cpp
-// Новосад Захарій
-// Модульний тест для функції h(a, b) до проекту Lab_05_1
-
 #include "pch.h"
 #include "CppUnitTest.h"
 
-// Підключення вихідного файлу основного проекту за відносним шляхом
-// (пряме посилання на основний проект БЕЗ копіювання / дублювання тіла функції)
+// Пряме посилання на основний проект без копіювання коду
 #define UNIT_TEST
-#include "../Lab_05_1/Lab_05_1.cpp"
+#include "../LAB05/Lab_05_1.cpp"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
@@ -19,7 +14,7 @@ namespace UnitTest051
     public:
         TEST_METHOD(TestMethod_h_1)
         {
-            // Тест 1: a = 1.0, b = 1.0 => (1 + 1 + 1*1) / (1 + 1) = 3 / 2 = 1.5
+            // Тест 1: a = 1.0, b = 1.0 => (1 + 1 + 1) / (1 + 1) = 3 / 2 = 1.5
             double expected = 1.5;
             double actual = h(1.0, 1.0);
             Assert::AreEqual(expected, actual, 1e-5);
@@ -42,4 +37,3 @@ namespace UnitTest051
         }
     };
 }
-
