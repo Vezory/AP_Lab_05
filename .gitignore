@@ -1,4 +1,7 @@
 .vs/
+*.sln
+*.slnx
+*.vcxproj*
 *.obj
 *.exe
 *.pdb
