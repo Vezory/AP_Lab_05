@@ -72,3 +72,4 @@ void A(const double x, const int n, double &a)
     double R = (((x - 1.0) / (x + 1.0)) * ((x - 1.0) / (x + 1.0))) * (2.0 * n - 1.0) / (2.0 * n + 1.0);
     a *= R;
 }
+

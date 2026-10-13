@@ -70,3 +70,4 @@ double s(const double x)
         return S;
     }
 }
+
