@@ -26,11 +26,11 @@ int main()
     dt = (tk - tp) / n;
 
     cout << fixed;
-    cout << "-------------------------------" << endl;
+    cout << "-----------------------------" << endl;
     cout << "|" << setw(7) << "t" << "   |"
-         << setw(13) << "z" << "   |"
-         << endl;
-    cout << "-------------------------------" << endl;
+        << setw(13) << "z" << "   |"
+        << endl;
+    cout << "-----------------------------" << endl;
 
     double t = tp;
     while (t <= tk + dt / 2.0)
@@ -38,12 +38,12 @@ int main()
         double z = s(t * t + 1.0) + 2.0 * pow(s(1.0 - t), 2) + s(1.0);
 
         cout << "|" << setw(7) << setprecision(2) << t << "   |"
-             << setw(13) << setprecision(5) << z << "   |"
-             << endl;
+            << setw(13) << setprecision(5) << z << "   |"
+            << endl;
 
         t += dt;
     }
-    cout << "-------------------------------" << endl;
+    cout << "-----------------------------" << endl;
 
     return 0;
 }
