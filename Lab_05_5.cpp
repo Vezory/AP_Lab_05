@@ -85,3 +85,4 @@ double sum_n(const double a1, const double d, const int n, int level, int &depth
     else
         return sum_n(a1, d, n - 1, level + 1, depth) + (a1 + (n - 1) * d);
 }
+
